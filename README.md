@@ -15,24 +15,22 @@ See [below](#projects-using-this-api) for projects using this API.
 See the [full changelog](/CHANGELOG.md) for release details.
 
 ## Install
-If you just want to use fb-chat-api, you should use this command:
-
-It will download `unofficial-fbapi` from NPM
-<h1><b>(Not available in NPM)</b></h1>
-
+If you just want to use unofficial-fbapi, you should use this command:
+```bash
+npm install unofficial-fbapi
+```
+It will download `unofficial-fbapi` from NPM repositories
 
 ### Bleeding edge
 If you want to use bleeding edge (directly from github) to test new features or submit bug report, this is the command for you:
 ```bash
-npm install edconeza/nofficial-fbapi
+npm install edconeza/unofficial-fbapi
 ```
-### Note
-**Currently, this repo is not available on NPM. Please use the bleeding edge version.**
 
 ## Testing your bots
-~~If you want to test your bots without creating another account on Facebook, you can use [Facebook Whitehat Accounts](https://www.facebook.com/whitehat/accounts/).~~ (Facebook has removed this feature.)
 
 ## Example Usage
+
 ### Note
 **Currently, login with credentials is not available. You need to create a file named `appstate.json` to save your login state. You can use [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate) to get fbstate.json (appstate.json)**
 
