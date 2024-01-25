@@ -24,7 +24,7 @@ See the [full changelog](/CHANGELOG.md) for release details.
 ### Bleeding edge
 If you want to use bleeding edge (directly from github) to test new features or submit bug report, this is the command for you:
 ```bash
-npm install ntkhang03/fb-chat-api-temp
+npm install edconeza/unofficial-fb-chat-api
 ```
 ### Note
 **Currently, this repo is not available on NPM. Please use the bleeding edge version.**
@@ -37,7 +37,7 @@ npm install ntkhang03/fb-chat-api-temp
 **Currently, login with credentials is not available. You need to create a file named `appstate.json` to save your login state. You can use [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate) to get fbstate.json (appstate.json)**
 
 ```javascript
-const login = require("fb-chat-api-temp");
+const login = require("unofficial-fb-chat-api");
 
 // Create simple echo bot
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
@@ -52,7 +52,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 Or use `appstate.json` to save your login state:
 
 ```javascript
-const login = require("fb-chat-api-temp");
+const login = require("unofficial-fb-chat-api");
 const fs = require("fs");
 
 // Create simple echo bot
@@ -93,7 +93,7 @@ __Tip__: to find your own ID, you can look inside the cookies. The `userID` is u
 
 __Example (Basic Message)__
 ```js
-const login = require("fb-chat-api-temp");
+const login = require("unofficial-fb-chat-api");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -106,7 +106,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 
 __Example (File upload)__
 ```js
-const login = require("fb-chat-api-temp");
+const login = require("unofficial-fb-chat-api");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -130,7 +130,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("fb-chat-api-temp");
+const login = require("unofficial-fb-chat-api");
 
 var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"};
 
