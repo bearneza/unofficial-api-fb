@@ -15,16 +15,16 @@ See [below](#projects-using-this-api) for projects using this API.
 See the [full changelog](/CHANGELOG.md) for release details.
 
 ## Install
-If you just want to use unofficial-fbapi, you should use this command:
+If you just want to use unofficial-api-fb, you should use this command:
 ```bash
-npm install unofficial-fbapi
+npm install unofficial-api-fb
 ```
-It will download `unofficial-fbapi` from NPM repositories
+It will download `unofficial-api-fb` from NPM repositories
 
 ### Bleeding edge
 If you want to use bleeding edge (directly from github) to test new features or submit bug report, this is the command for you:
 ```bash
-npm install edconeza/unofficial-fbapi
+npm install edconeza/unofficial-api-fb
 ```
 
 ## Testing your bots
@@ -35,7 +35,7 @@ npm install edconeza/unofficial-fbapi
 **Currently, login with credentials is not available. You need to create a file named `appstate.json` to save your login state. You can use [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate) to get fbstate.json (appstate.json)**
 
 ```javascript
-const login = require("unofficial-fbapi");
+const login = require("unofficial-api-fb");
 
 // Create simple echo bot
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
@@ -50,7 +50,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 Or use `appstate.json` to save your login state:
 
 ```javascript
-const login = require("unofficial-fbapi");
+const login = require("unofficial-api-fb");
 const fs = require("fs");
 
 // Create simple echo bot
@@ -91,7 +91,7 @@ __Tip__: to find your own ID, you can look inside the cookies. The `userID` is u
 
 __Example (Basic Message)__
 ```js
-const login = require("unofficial-fbapi");
+const login = require("unofficial-api-fb");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -104,7 +104,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 
 __Example (File upload)__
 ```js
-const login = require("unofficial-fbapi");
+const login = require("unofficial-api-fb");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -128,7 +128,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("unofficial-fbapi");
+const login = require("unofficial-api-fb");
 
 var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"};
 
@@ -152,7 +152,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("unofficial-fbapi");
+const login = require("unofficial-api-fb");
 
 // Simple echo bot. It will repeat everything that you say.
 // Will stop when you say '/stop'
